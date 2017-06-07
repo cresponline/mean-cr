@@ -1,4 +1,4 @@
-import { MeanCrPage } from './app.po';
+import { MeanCrPage } from './page-objects/app.po';
 
 describe('mean-cr App', () => {
   let page: MeanCrPage;
