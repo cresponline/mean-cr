@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
-  title = 'darkZone';
+  title = 'welcome to the darkZone!';
+  clanIconUrl = '../assets/img/16000026.png';
 }

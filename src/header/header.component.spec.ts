@@ -17,16 +17,16 @@ describe('HeaderComponent', () => {
     expect(header).toBeTruthy();
   }));
 
-  it(`should have as title 'darkZone'`, async(() => {
+  it(`should have as title 'welcome to the darkZone!'`, async(() => {
     const fixture = TestBed.createComponent(HeaderComponent);
     const header = fixture.debugElement.componentInstance;
-    expect(header.title).toEqual('darkZone');
+    expect(header.title).toEqual('welcome to the darkZone!');
   }));
 
-  it(`should render title 'darkZone' in an a tag`, async(() => {
+  it(`should render title 'welcome to the darkZone!' in an a tag`, async(() => {
     const fixture = TestBed.createComponent(HeaderComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('a').textContent).toContain('darkZone');
+    expect(compiled.querySelector('a').textContent).toContain('welcome to the darkZone!');
   }));
 });

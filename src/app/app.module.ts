@@ -6,19 +6,23 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { NoticesComponent } from '../notices/notices.component';
+
+import { NoticesService } from '../notices/notices.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    NoticesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [NoticesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

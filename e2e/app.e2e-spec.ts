@@ -7,8 +7,8 @@ describe('mean-cr App', () => {
     page = new MeanCrPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying welcome to the darkZone', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('welcome to the darkZone');
   });
 });
