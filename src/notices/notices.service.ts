@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -8,7 +7,7 @@ import { Notice } from './notice';
 @Injectable()
 export class NoticesService {
 
-  constructor(private http: Http) { }
+  constructor() { }
 
   getNotices(): Notice[] {
     let notices: Notice[] = [
