@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoticesComponent } from './notices/notices.component';
+import { NoticesService } from './notices/notices.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -14,6 +15,9 @@ describe('AppComponent', () => {
         FooterComponent,
         NoticesComponent
       ],
+      providers: [
+        NoticesService
+      ]
     }).compileComponents();
   }));
 

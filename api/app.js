@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
 
-var ExampleCotrl = require('./controllers/example');
+var ExampleCtrl = require('./controllers/example');
 
 var router = express.Router();
 router.get('/', function(req, res) {

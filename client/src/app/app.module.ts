@@ -9,13 +9,15 @@ import { FooterComponent } from './footer/footer.component';
 import { NoticesComponent } from './notices/notices.component';
 
 import { NoticesService } from './notices/notices.service';
+import { MembersComponent } from './members/members.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NoticesComponent
+    NoticesComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
