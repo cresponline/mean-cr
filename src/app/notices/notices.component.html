@@ -1,6 +1,6 @@
 <h2>Noticias</h2>
 <div *ngFor="let notice of notices" class="container notice">
-  <p><span  class="notice-category">{{notice.category}}</span> | <span  class="notice-date">{{notice.date}}</span></p>
+  <p><span  class="notice-category">{{notice.category}}</span> | <span  class="notice-date">{{notice.date | date: 'dd/MM/yyyy'}}</span></p>
   <h3 class="notice-title">{{notice.title}}</h3>
   <p class="notice-description">{{notice.description}}</p>
 </div>

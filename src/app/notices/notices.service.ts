@@ -17,6 +17,13 @@ export class NoticesService {
         description: 'Lorem ipsum bla bla bla. Mas texto blabla bla',
         title: 'Título de prueba',
         category: 'Noticia de prueba'
+      },
+      {
+        id: 2,
+        date: new Date().getTime(),
+        description: 'Lorem ipsum bla bla bla. Mas texto blabla bla',
+        title: 'Título de prueba 2',
+        category: 'Noticia de prueba'
       }
     ];
     return notices;
