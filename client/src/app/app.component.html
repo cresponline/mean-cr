@@ -1,5 +1,6 @@
-<app-header></app-header>
+<app-header (toggleLogin)="handleLogin()"></app-header>
 <div class="app-container container col-xs-12 col-sm-6 col-lg-8">
+  <app-login [visible] = "loginVisible"></app-login>
   <app-notices></app-notices>
 </div>
 <app-footer></app-footer>

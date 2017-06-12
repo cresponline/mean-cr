@@ -1,0 +1,10 @@
+.non-visible {
+  width: 500px;
+  height: 0;
+  overflow: hidden;
+}
+
+.visible {
+  width: 500px;
+  height: 320px;
+}

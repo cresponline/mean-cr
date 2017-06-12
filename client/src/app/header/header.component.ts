@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+   @Output() toggleLogin = new EventEmitter();
+
+   ngOnInit() {}
+
   title = 'welcome to the darkZone!';
   clanIconUrl = '../assets/img/16000026.png';
+
+  showLogin():void {
+    console.log('showLogin header');
+    this.toggleLogin.emit();
+  }
 }

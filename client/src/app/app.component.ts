@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
 import { NoticesService } from './notices/notices.service';
 
 
@@ -10,4 +10,16 @@ import { NoticesService } from './notices/notices.service';
 })
 
 export class AppComponent {
+  loginVisible : boolean;
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.loginVisible = false;
+  }
+
+  handleLogin ():void {
+    this.loginVisible = !this.loginVisible;
+    console.log('app', this.loginVisible);
+  }
 }

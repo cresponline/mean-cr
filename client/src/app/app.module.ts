@@ -10,6 +10,7 @@ import { NoticesComponent } from './notices/notices.component';
 
 import { NoticesService } from './notices/notices.service';
 import { MembersComponent } from './members/members.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MembersComponent } from './members/members.component';
     HeaderComponent,
     FooterComponent,
     NoticesComponent,
-    MembersComponent
+    MembersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
